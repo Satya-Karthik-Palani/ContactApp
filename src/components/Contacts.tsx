@@ -33,7 +33,7 @@ function Home() {
             </div>
         </div>
         <hr className="w-11/12 mx-auto border-t-2 border-gray-700"/>
-        <div className='flex flex-wrap justify-center mt-5 mx-auto'>
+        <div className='flex flex-wrap justify-center my-5 mx-auto'>
             {contacts.length>0   ? contacts.map((contact)=>(<div key={contact.id} className='flex flex-col justify-between rounded-lg w-80 h-56 m-4 p-4 bg-white text-gray-700'>
                 <div className='flex text-2xl pt-4 font-semibold'> <p className='mr-2'>{contact.firstname}</p> <p className='overflow-hidden whitespace-nowrap w-full truncate'>{contact.lastname}</p></div>
                 <p className='text-xl'>Status : {contact.status==="active" ? "🟢" : "🔴"}</p>
