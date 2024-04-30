@@ -2,13 +2,19 @@ export const contactList = [
     {
         firstname : "karthik",
         lastname : "palani",
-        status: true,
+        status: "inactive",
         id: 1
     },
     {
         firstname : "subhash",
         lastname : "kristipati",
-        status: true,
+        status: "active",
         id: 2
+    },
+    {
+        firstname : "sharan",
+        lastname : "puthiyottam",
+        status: "inactive",
+        id: 3
     }
 ]

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import {Provider} from "react-redux";
 import {configureStore} from "@reduxjs/toolkit";
-import ContactReducer  from './contactReducer';
+import ContactReducer  from './ContactReducer';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
