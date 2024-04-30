@@ -36,7 +36,7 @@ function Home() {
         <div className='flex flex-wrap justify-center my-5 mx-auto'>
             {contacts.length>0   ? contacts.map((contact)=>(<div key={contact.id} className='flex flex-col justify-between rounded-lg w-80 h-56 m-4 p-4 bg-white text-gray-700'>
                 <div className='flex text-2xl pt-4 font-semibold'> <p className='mr-2'>{contact.firstname}</p> <p className='overflow-hidden whitespace-nowrap w-full truncate'>{contact.lastname}</p></div>
-                <p className='text-xl'>Status : {contact.status==="active" ? "🟢" : "🔴"}</p>
+                <p className='text-xl'>Status : {contact.status==="active" ? "🟢 Active" : "🔴 Inactive"}</p>
                 <div className='flex text-center space-x-0.5 text-black'>
                     <Link to={`/edit/${contact.id}`} className="w-1/2 px-4 py-3 bg-gray-200 rounded-md font-semibold hover:text-white hover:bg-green-500">Edit</Link>
                     <button onClick={()=>onDeleteHandler(contact.id)} className="w-1/2 px-4 py-3 bg-gray-200 rounded-md font-semibold hover:text-white hover:bg-red-500">Delete</button>
