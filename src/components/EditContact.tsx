@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate,useParams } from 'react-router-dom';
 import { useDispatch,useSelector} from 'react-redux'
-import { updateContact } from '../ContactReducer';
+import { updateContact } from './ContactReducer';
 
 interface RootState {
     contacts: ContactType[];

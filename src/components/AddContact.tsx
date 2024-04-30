@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { addContact } from '../ContactReducer';
+import { addContact } from './ContactReducer';
 import { useDispatch } from 'react-redux';
 import { useSelector} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
